@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/style/landing.css">
+{% endblock %}
+
+{% block body %}
+    <div class="parallax">
+        <div class="caption">
+            <span class="border">SCROLL DOWN</span>
+        </div>
+    </div>
+
+    <div class="parallax2"></div>
+
+    <div class="parallax3">    
+        <div class="caption">
+            <span class="border">SCROLL UP</span>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block javascripts %}
+        {{ parent() }}
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+{% endblock %}
