@@ -62,7 +62,7 @@
 }
 .nosotros {
   /* The image used */
-  background-image: url("https://images.assetsdelivery.com/compings_v2/tharun15/tharun151705/tharun15170500034.jpg");
+  background-image: url("https://static.wixstatic.com/media/11062b_18631521a1244211a1e7d329be6f365d~mv2.jpg");
 
   /* Set a specific height */
   min-height: calc(100vh - 10px); 
@@ -81,17 +81,15 @@
     min-height: calc(60vh - 10px); 
   
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+ 
   }
   .contacto{
     /* The image used */
-    background-image: url("https://www.beautycolorcode.com/456679-1366x768.png");
+    background-color: #bdcfd9 ;
+    /* background-image: url("https://www.beautycolorcode.com/456679-1366x768.png"); */
 
     /* Set a specific height */
-    min-height: calc(100vh - 10px); 
+    min-height: calc(70vh - 10px); 
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -106,6 +104,20 @@
     
       /* Set a specific height */
       min-height: calc(100vh - 10px);  
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .contacto{
+      /* The image used */
+      background-color: #bdcfd9 ;
+      /* background-image: url("https://www.beautycolorcode.com/456679-1366x768.png"); */
+  
+      /* Set a specific height */
+      min-height: calc(90vh - 10px) !important; 
     
       /* Create the parallax scrolling effect */
       background-attachment: fixed;
@@ -182,6 +194,28 @@
     color: #fff;
     margin-top: 2%;
     /* font-family: Arial, Helvetica, sans-serif; */
+  }
+  .cardNosotros{
+    width: 91% !important;
+  }
+  .cardContacto{
+    width: 91% !important;
+  }
+  .images{
+    /* The image used */
+    background-image: url("https://static.wixstatic.com/media/9b6c7d_54033d6d82c24d8e9be8212d3a8febe6.jpg");
+
+    /* Set a specific height */
+    min-height: calc(60vh - 10px); 
+  
+    /* Create the parallax scrolling effect */
+  
+    background-size: cover;
+  }
+  #form_Description{
+    margin-bottom: 2%;
+    width: 100% !important;
+    height: 6rem;
   }
 }
 .border1{
@@ -294,4 +328,25 @@
 	-moz-animation-name: fadeInUp;
 	-o-animation-name: fadeInUp;
 	animation-name: fadeInUp;
+}
+
+.card-text.text-muted{
+    margin-left: 9%;
+    margin-right: 9%;
+    /* font-size: 14px; */
+}
+
+#form_Name{
+  margin-bottom: 2%;
+}
+#form_Email{
+  margin-bottom: 2%;
+}
+#form_Asunto{
+  margin-bottom: 2%;
+}
+#form_Description{
+  margin-bottom: 2%;
+  width: 105%;
+  min-height: 82px;
 }

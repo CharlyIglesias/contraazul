@@ -137,19 +137,69 @@
         </div>      
     </div>
 
-        <div class="parallax nosotros">
-        <div class="caption">
-            <span class="border2">SCROLL DOWN</span>
+    <div class="parallax nosotros">
+        <div class="row separador"></div>
+        <div class="row">
+
+            <div class="card cardNosotros" style="text-align: center; width: 35%; margin-left:auto; margin-right: auto">
+                <div class="card-body">
+                    <h3 class="card-title" style="color: #5c5b5b; margin-top: 3rem;">Nosotros</h3>
+                    <hr style="width: 95px;height: 2px;background-color:black; margin-bottom: 2.5rem;">
+                    {# <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> #}
+                    <p class="card-text text-muted">Nuestra intención es facilitar lo más importante, un autodiágnostico previo, porque esta enfermedad silenciosa puede desarrollarse lentamente y creer el paciente que es "normal" sentirse triste,con baja autoestima y acostumbrarse.   Pero ahí radica el problema, el no darse cuenta que nuestra mente necesita atención profesional.   Hay casos que pueden tomarse años en atenderse y desperdiciamos vida para disfrutarla plenamente sin ataduras.   Hay que romper esa "cadena" y "prisión" en nuestra propia cabeza.</p>
+                    <p class="card-text text-muted">Por eso nos llamamos "Contra Azul" para romper con la depresión hay que conocernos y entender que no es normal nuestra actitud mental.</p>
+                    <p class="card-text text-muted">Facilitamos el referenciarte con un especialista con experiencia en el tema que te pueda ayudar y entenderte.   Tanto a ti o a tu ser querido que creas esté en una situación de este tipo.</p>
+                    <p class="card-text text-muted">De manera personal hemos experimentado esto y tambien con familiares cercanos, eso nos motiva ha realizar este portal.</p>
+                    <p class="card-text text-muted" style="font-size: 0.96rem;">Nos apoyamos  con un test propiedad de la compañía  Pfizer, Inc</p>
+                </div>
+            </div>
         </div>
+        <div class="row separador"></div>
     </div>
 
     <div class="parallax images">
-        
+        {% if isMobile == true %}
+        <img class="images" style="object-fit: cover; min-height: calc(60vh - 10px); max-width: 100%;" src="https://static.wixstatic.com/media/9b6c7d_54033d6d82c24d8e9be8212d3a8febe6.jpg">
+        {% endif %}
     </div>
 
     <div class="parallax contacto">
-        <div class="caption">
-            <span class="border2">SCROLL DOWN</span>
+    <div class="row separador"></div>
+        
+        <div class="card animatable fadeInUp cardContacto" style="width: 37%; margin-left:auto; margin-right: auto">
+            
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Contactanos</h5>
+            <hr style="width: 45px;height: 2px;background-color:black; margin-bottom: 2.5rem;">
+                    
+                <div class="row">
+                    <div class="col-lg-6 col-12"style="text-align: center;">
+                        <p>Monterrey, Nuevo León, México</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230187.55064046764!2d-100.44318182881534!3d25.648728127237323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629531b437f8f5%3A0xa3d3d3ca6ac89894!2sMonterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1599249412331!5m2!1ses-419!2smx" width="87%" height="56%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <p style="margin-top: 1rem"><a class="auto-generated-link" data-auto-recognition="true" data-content="contraazul1@gmail.com" href="mailto:contraazul1@gmail.com" data-type="mail">contraazul1@gmail.com</a></p>
+                    </div>
+                    <div class="col-lg-6 col-12" style="text-align: center;">
+                        <div class="form-group" style="display: inline-block;">
+                            {{ form_start(form) }}
+                                <div class="form-row">
+                                    {{ form_row(form.Name)}}
+                                </div>
+                                <div class="form-row">
+                                    {{ form_row(form.Email)}}
+                                </div>
+                                <div class="form-row">
+                                    {{ form_row(form.Asunto)}}
+                                </div>
+                                <div class="form-row">
+                                    {{ form_row(form.Description)}}
+                                </div>
+                            
+                        </div>
+                            {{ form_end(form) }}
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
