@@ -31,7 +31,8 @@ class DashboardController extends AbstractController{
     {
         // $this->denyAccessUnlessGranted(['ROLE_USER', 'ROLE_SUPER_ADMIN', 'ROLE_ADMIN']);
 
-        
+     
+
         return $this->render('landing.html.twig');
     }
 }
