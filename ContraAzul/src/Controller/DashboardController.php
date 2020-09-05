@@ -39,14 +39,14 @@ class DashboardController extends AbstractController{
         // dd(is_numeric(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), "mobile")));
         $form = $this->createFormBuilder()
         ->add('Name',TextType::class,['label' => false,
-        'attr' => ['maxlength' => 30, 'minlength' => 1, 'placeholder' => 'Nombre *'] ])
+        'attr' => ['class' => 'form-control','maxlength' => 30, 'minlength' => 1, 'placeholder' => 'Nombre *'] ])
         ->add('Email',TextType::class,['label' => false,
-        'attr' => ['maxlength' => 30, 'minlength' => 1, 'placeholder' => 'Email *'] ])
+        'attr' => ['class' => 'form-control','maxlength' => 30, 'minlength' => 1, 'placeholder' => 'Email *'] ])
         ->add('Asunto',TextType::class,['label' => false,
-        'attr' => ['maxlength' => 30, 'minlength' => 1, 'placeholder' => 'Asunto '] ])
+        'attr' => ['class' => 'form-control','maxlength' => 30, 'minlength' => 1, 'placeholder' => 'Asunto '] ])
         ->add('Description', TextareaType::class, ['label' => false,
-                                            'attr' => ['minlength' => 10, 'placeholder' => 'Descripcion '] ])
-        ->add('save',SubmitType::class,['label' => 'Submit'])
+                                            'attr' => ['class' => 'form-control','minlength' => 10, 'placeholder' => 'Descripcion '] ])
+        ->add('save',SubmitType::class,['label' => 'Enviar', 'attr' => ['class' => 'btn btn-primary']])
         ->getForm();
     
         $form->handleRequest($request);
