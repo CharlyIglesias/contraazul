@@ -155,12 +155,12 @@
 .botonazos {
   /* position: absolute; */
   left: 0;
-  position: absolute; 
+  position: relative; 
   bottom: 74px;
   width: 100%;
   text-align: center;
   color: #fff;
-  margin-top: 2%;
+  margin-top: 15%;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 .caption span.border2 {
@@ -174,6 +174,9 @@
 .separador{
   height: 85px;
 }
+.separadorInicial{
+  height: 85px;
+}
 @media (max-width: 991px){
   .separador{
     height: 30px;
@@ -182,29 +185,35 @@
     margin-top: 10px;
   }
   .intro{
-    min-height: 60vh;
+    min-height: 65vh;
   }
   .logoCentrado{
     width: 60%;
+  }
+  .logoCentrado2{
+    width: 17%;
   }
   .fbicon{
     max-width: 7%;
     margin-right: 2%;
   }
   .servicios {
-    
+    background-image: url("https://static.wixstatic.com/media/1e47b2_cd5df08585b64f40a575e620ed3bf997.jpg");
+    /* background-attachment: fixed; */
+    background-size:cover;
+    background-attachment: scroll !important;
     /* Set a specific height */
     min-height: calc(100vh + 20px); 
   }
   .botonazos {
     /* position: absolute; */
     left: 0;
-    position: absolute; 
-    bottom: 28px;
+    position: relative; 
+    bottom: 0px;
     width: 100%;
     text-align: center;
     color: #fff;
-    margin-top: 2%;
+    margin-top: 10%;
     /* font-family: Arial, Helvetica, sans-serif; */
   }
   .cardNosotros{
@@ -231,8 +240,12 @@
   }
 }
 .border1{
-  font-size: 20px;
+  /* font-size: 20px; */
   font-weight: lighter;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }
 .iconos{
   text-align: center;

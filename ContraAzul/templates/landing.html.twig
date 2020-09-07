@@ -15,19 +15,24 @@
     <div class="parallax intro">
     <div class="row separador"></div>
     <img class="logoCentrado" src="https://static.wixstatic.com/media/bb2d79_d249037129fe445caa05604ead81cbc1~mv2.png" alt="logo">
-        <div class="caption"style="font-weight: bold;">
-            <span class="border2">Portal dedicado a la Intermediación de Servicios de Salud Mental</span>
-        </div>
-        <div class="caption">
-            <span class="border1">Luchemos juntos contra la Depresión</span>
-        </div>
-        <div class="botonazos">
-            <a href="https://www.facebook.com/Contraazul/" target="_blank"><img class="fbicon animatable fadeInUp" src="https://static.wixstatic.com/media/e0678ef25486466ba65ef6ad47b559e1.png" alt="facebook"></a>
-            <a href="https://instagram.com/contra.azul?igshid=ah4p3l6j142m" target="_blank"><img class="fbicon animatable fadeInUp" src="https://static.wixstatic.com/media/da7ef6dd1302486c9a67baebe4b364bc.png" alt="instagram"></a>
+        <div class="col">
+            <div class="row">
+                <h3 style="text-align: center;margin-left: auto;margin-right: auto;color: #fff; background-color: transparent;font-weight: bold;">Portal dedicado a la Intermediación de Servicios de Salud Mental</h3>
+            </div>
+            <div class="row" style="margin-top: 2%;">
+                <h5 class="border1" style="">Luchemos juntos contra la Depresión</h5>
+            </div>
+            <div class="botonazos">
+                <a href="https://www.facebook.com/Contraazul/" target="_blank"><img class="fbicon animatable fadeInUp" src="https://static.wixstatic.com/media/e0678ef25486466ba65ef6ad47b559e1.png" alt="facebook"></a>
+                <a href="https://instagram.com/contra.azul?igshid=ah4p3l6j142m" target="_blank"><img class="fbicon animatable fadeInUp" src="https://static.wixstatic.com/media/da7ef6dd1302486c9a67baebe4b364bc.png" alt="instagram"></a>
+            </div>
         </div>
     </div>
-
-      <div class="parallax servicios">
+    
+      <div id="tarjetaServicio" class="parallax servicios">
+        {# {% if isMobile == true %}
+            <img class="images" style="object-fit: cover; min-height: calc(60vh - 10px); max-width: 100%;" src="https://static.wixstatic.com/media/1e47b2_cd5df08585b64f40a575e620ed3bf997.jpg">
+        {% endif %} #}
       <div class="row separador"></div>
       
         <div class="caption animatable fadeInUp">
@@ -100,7 +105,7 @@
         </div>
     </div>
 
-    <div class="parallax queesladep">
+    <div id="tarjetaQueEsLaDep" class="parallax queesladep">
     <div class="row separador"></div>
       
         <div class="caption Black animatable fadeInUp">
@@ -131,16 +136,17 @@
             </div>
             <div class="col-lg-3 col-1"></div>
         </div>   
-        <div class="row">
+        <div class="row" style="margin-top: 2%; margin-bottom: 4%;">
             <div class="col-lg-3 col-1"></div>
             <div class="col">
-                <img style="max-width: 100%; object-fit: cover;" src="https://i.pinimg.com/736x/d2/fc/e0/d2fce0e082bbfbc255b2aa492c2266a2.jpg" alt="image">
+                <img style="max-width: 100%; object-fit: cover;" src="/assets/imagenGente.jpg" alt="image">
+                {# <img  src="https://i.pinimg.com/736x/d2/fc/e0/d2fce0e082bbfbc255b2aa492c2266a2.jpg" alt="image"> #}
             </div>
             <div class="col-lg-3 col-1"></div>
         </div>      
     </div>
 
-    <div class="parallax nosotros">
+    <div id="tarjetaNosotros" class="parallax nosotros">
         <div class="row separador"></div>
         <div class="row">
 
@@ -166,7 +172,7 @@
         {% endif %}
     </div>
 
-    <div class="parallax contacto">
+    <div id="tarjetaContacto" class="parallax contacto">
     <div class="row separador"></div>
         {% if isMobile == false %}
             <div class="card animatable fadeInUp cardContacto" style="width: 37%; margin-left:auto; margin-right: auto">
@@ -211,11 +217,11 @@
     
       <div class="row" style="background-color: black !important;">
         <a href="/">
-            <img class="logoCentrado2" src="https://static.wixstatic.com/media/bb2d79_d249037129fe445caa05604ead81cbc1~mv2.png" alt="logo">
+            <img class="logoCentrado2" src="/assets/logo_blanco.png" alt="logo">
         </a>
       </div>
       <div class="row" style="background-color: black !important;">
-        <p style="color: white; margin-left: auto; margin-right: auto;">© 2017 por Lic. Alejandro Zavala, Lic. Sofia Zavala y Asociados.</p>
+        <p style="color: white; margin-left: auto; margin-right: auto; text-align: center;">© 2017 por Lic. Alejandro Zavala, Lic. Sofia Zavala y Asociados.</p>
       </div>
 {% endblock %}
 

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} - Test {% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+            
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    {# <link rel="stylesheet" href="/style/landing.css"> #}
+{% endblock %}
+
+{% block body %}
+{# <p>Hola</p> #}
+<div class="row separador" style="height: 50px;"></div>
+<div class="cognito">
+    <script src="https://www.cognitoforms.com/s/iEBqgRlN60ONF9kUCnWT7g"></script>
+    <script>Cognito.load("forms", { id: "1" });</script>
+</div>
+
+{% endblock %}

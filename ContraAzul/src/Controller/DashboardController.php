@@ -10,6 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 
+
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -29,6 +30,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 
 
 class DashboardController extends AbstractController{
+
 /**
  * @Route("/", name="_home")
  * @Method({"GET"})
@@ -53,11 +55,21 @@ class DashboardController extends AbstractController{
         if ($form->isSubmitted() && $form->isValid()) {
 
         }
+        // return $this->render('testDepresion.html.twig');
         return $this->render('landing.html.twig',[
             'form'=> $form->createView(),
             'isMobile' => is_numeric(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), "mobile"))
         ]);
         
+    }
+
+    /**
+     * @Route("/testDepresion", name="_test_depresion")
+     * @Method({"GET"})
+     */
+    public function testCognito(Request $request, SessionInterface $session)
+    {
+        return $this->render('testDepresion.html.twig');
     }
 }
 ?>

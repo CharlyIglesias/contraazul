@@ -14,19 +14,22 @@
         {% endblock %}
     </head>
         <header>
-        <div class="logo"><img src="/assets/letrasLogo.png" style="max-height: 46px;"> </div>
-        <nav>
+        <a href="/" style="color: white; cursor: pointer;">
+            <div class="logo"><img src="/assets/letrasLogo.png" style="max-height: 46px;"> </div>
+        </a>
+        <nav id="navigator">
             <ul>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">¿Qué es la depresión?</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Haz el Test!</a></li>
+                <li><a onclick="myFunction2(tarjetaServicio)" style="color: white; cursor: pointer;">Servicios</a></li>
+                <li><a onclick="myFunction2(tarjetaQueEsLaDep)" style="color: white; cursor: pointer;">¿Qué es la depresión?</a></li>
+                <li><a onclick="myFunction2(tarjetaNosotros)" style="color: white; cursor: pointer;">Nosotros</a></li>
+                <li><a onclick="myFunction2(tarjetaContacto)" style="color: white; cursor: pointer;">Contacto</a></li>
+                <li><a href="/testDepresion">Haz el Test!</a></li>
+                {# <li><button class="btn btn-danger" onclick="myFunction(tarjetaContacto)">Contacto2</button></li> #}
             </ul>
         </nav>
         
         
-        <div class="menu-toggle"><i class="fas fa-bars menu"></i></div>
+        <div id="barritas" class="menu-toggle"><i class="fas fa-bars menu"></i></div>
         </header>
 
         {% block body %} {% endblock %}
