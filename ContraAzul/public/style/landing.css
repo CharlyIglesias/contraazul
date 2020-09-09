@@ -375,3 +375,14 @@
   width: 104%;
   min-height: 82px;
 }
+.toast{
+  position: fixed;
+  right: 3%;
+  bottom:3%;
+  z-index: 999;
+  /* opacity: 1 !important; */
+}
+.toast-header{
+  background-color: #1e81e0f7;
+  color: black;
+}
