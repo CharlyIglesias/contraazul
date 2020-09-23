@@ -19,9 +19,9 @@ class MailService
 
     public function sendEmail($fromWho, $subject, $toWho, $content, $link = null){
         $email = new \SendGrid\Mail\Mail();
-        $email->setFrom($fromWho, $_ENV['base_email']);
+        $email->setFrom($fromWho, $fromWho);
         $email->setSubject($subject);
-        $email->addTo("charlyglesias@gmail.com");
+        $email->addTo($_ENV['base_email']);
         $email->addContent("text/html", $content);
         $apiKey = $_ENV['SENDGRID_API_KEY'];
         $sendgrid = new \SendGrid($apiKey);

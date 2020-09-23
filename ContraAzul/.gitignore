@@ -55,7 +55,6 @@
 # Embedded web-server pid file
 /.web-server-pid
 .idea/
-.env
 config/services-dist.yaml
 
 ###> lexik/jwt-authentication-bundle ###
